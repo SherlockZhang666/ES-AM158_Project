@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib
 
-# Use non-interactive backend for SSH/headless environments
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import imageio.v2 as imageio

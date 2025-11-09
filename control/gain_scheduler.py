@@ -1,5 +1,3 @@
-# control/gain_scheduler.py
-
 import numpy as np
 
 
