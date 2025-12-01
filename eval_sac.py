@@ -29,7 +29,7 @@ def forward_kinematics(q, link_lengths=(1.0, 1.0)):
 def evaluate_and_record(
     model_path,
     out_video="eval_arm.mp4",
-    episodes=3,
+    episodes=10,
     max_steps=200,
 ):
     env = PlanarArmEnv()
@@ -77,4 +77,4 @@ def evaluate_and_record(
 
 if __name__ == "__main__":
     model_path = os.path.join("models", "sac_planar_arm")
-    evaluate_and_record(model_path, out_video="eval_arm.mp4", episodes=3, max_steps=200)
+    evaluate_and_record(model_path, out_video="eval_arm.mp4", episodes=10, max_steps=200)

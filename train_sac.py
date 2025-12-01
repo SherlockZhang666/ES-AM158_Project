@@ -32,7 +32,7 @@ def main():
     )
 
     # train (try)
-    model.learn(total_timesteps=100_000)
+    model.learn(total_timesteps=200_000)
     os.makedirs("models", exist_ok=True)
     model_path = os.path.join("models", "sac_planar_arm")
     model.save(model_path)
